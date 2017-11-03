@@ -1,0 +1,25 @@
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 407px;
+  margin-bottom: 43px;
+
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border: 2px solid #b3b7b7;
+    border-radius: 50px;
+
+    svg{
+      width: 20px;
+      fill: #b3b7b7;
+    }
+
+  }
+
+}

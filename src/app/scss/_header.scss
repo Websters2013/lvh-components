@@ -1,0 +1,64 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 0 49px 20px;
+  padding: 40px 0 11px;
+  @include HiraginoSans-W3;
+  font-size: 21px;
+  box-shadow: 4px 4px 7px rgba(50,50,50,.1);
+
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__login{
+    display: none;
+  }
+
+  &__phone{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: #000;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+  .header{
+    margin-bottom: 139px;
+    padding: 11px 0;
+
+    &__phone{
+      position: relative;
+      top: 0;
+    }
+
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+  .header{
+
+    &__phone{
+      margin-left: 46px;
+    }
+
+    &__login{
+      display: block;
+      color: #000;
+    }
+
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    margin-left: calc(50% - 543px);
+
+  }
+}

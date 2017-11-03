@@ -1,0 +1,38 @@
+.site{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  overflow: hidden;
+
+  &__content{
+    margin-left: 20px;
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .site {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .site {
+    padding-top: 49px;
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .site {
+    padding-top: 128px;
+  }
+}
+@media (min-width: $desktop) {
+  .site {
+
+    &__content{
+      margin: 0 calc(50% - 683px) 0 calc(50% - 543px);
+    }
+
+  }
+}

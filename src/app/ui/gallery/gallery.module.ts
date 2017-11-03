@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from './header.component';
+import { GalleryComponent } from './gallery.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-      HeaderComponent
+    GalleryComponent
   ],
   exports: [
-    HeaderComponent
+    GalleryComponent
   ]
 })
-export class HeaderModule { }
+export class GalleryModule { }

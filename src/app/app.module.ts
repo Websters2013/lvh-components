@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { UiComponent } from './ui/ui.component';
-import {UiModule} from './ui/ui.module';
+import { UiModule } from './ui/ui.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,9 +11,10 @@ import {UiModule} from './ui/ui.module';
   ],
   imports: [
     BrowserModule,
-      UiModule
+    BrowserAnimationsModule,
+    UiModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

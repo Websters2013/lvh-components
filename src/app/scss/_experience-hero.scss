@@ -1,0 +1,34 @@
+.experience-hero{
+
+  img{
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+}
+
+@media (min-width: $phone-landscape) {
+  .experience-hero {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .experience-hero {
+
+    img{
+      margin-bottom: 135px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .experience-hero {
+
+  }
+}
+@media (min-width: $desktop) {
+  .experience-hero {
+    margin-bottom: 126px;
+  }
+}

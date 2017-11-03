@@ -1,0 +1,153 @@
+.gallery{
+  color: $text-color-2;
+  @include KozGoPro-Regular;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 69px;
+
+  h2{
+    margin-bottom: 25px;
+    color: $titles-color;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  &__swiper{
+    margin-top: 24px;
+  }
+
+  &__item{
+    position: relative;
+    width: 405px;
+    height: 480px;
+    padding-right: 31px;
+    overflow: hidden;
+
+    &:before,
+    &:after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      content: '';
+      z-index: 1;
+    }
+
+    &:before{
+      background: -moz-linear-gradient(top, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.85) 100%);
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0.03) 0%,rgba(0,0,0,0.85) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.03) 0%,rgba(0,0,0,0.85) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08000000', endColorstr='#d9000000',GradientType=0 );
+      transition: opacity .3s ease;
+    }
+
+    &:after{
+      opacity: 0;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.03) 100%);
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.03) 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.03) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#08000000',GradientType=0 );
+      transition: opacity .3s ease;
+    }
+
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      -webkit-transform: translate( -50%, -50% );
+      transform: translate( -50%, -50% );
+    }
+
+    &-content{
+      position: absolute;
+      top: 386px;
+      left: 0;
+      width: 100%;
+      padding: 0 43px;
+      color: #fff;
+      @include HiraKakuPr-W1;
+      font-size: 13px;
+      line-height: 31px;
+      z-index: 2;
+      transition: top .3s ease;
+    }
+
+    &-name{
+      @include HiraginoSans-W6;
+      font-size: 18px;
+      letter-spacing: 1.2px;
+    }
+
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-right: 31px;
+    }
+
+    &-text{
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, visibility .3s ease;
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .gallery {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .gallery {
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: .1px;
+
+    h2{
+      font-size: 44px;
+      letter-spacing: -1.3px;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .gallery {
+
+  }
+}
+@media (min-width: $desktop) {
+  .gallery {
+
+    &__item{
+
+      &:hover{
+
+        &:before{
+          opacity: 0;
+        }
+
+        &:after{
+          opacity: 1;
+        }
+
+        .gallery__item-content{
+          top: 40px;
+        }
+
+        .gallery__item-text{
+          opacity: 1;
+          visibility: visible;
+        }
+
+      }
+
+    }
+
+  }
+}

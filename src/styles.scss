@@ -1,6 +1,14 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "app/scss/reset";
 @import "app/scss/variables";
 @import "app/scss/colors";
 @import "app/scss/mixins";
 @import "app/scss/flexbox";
 @import "app/scss/site";
+
+.mat-drawer-container{
+  background-color: transparent;
+}
+.mat-drawer-backdrop.mat-drawer-shown{
+  background-color: transparent;
+}

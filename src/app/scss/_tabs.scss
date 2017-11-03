@@ -1,0 +1,54 @@
+.tabs{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 40px;
+  @include HiraginoSans-W3;
+  font-size: 14px;
+  box-shadow: 4px 4px 7px rgba(50, 50, 50, 0.1);
+
+  a{
+    margin-bottom: 15px;
+    padding: 17px 0;
+    color: $tabs-color;
+    transition: color .3s ease;
+
+    &.active{
+      color: $tabs-active-color;
+    }
+
+  }
+
+}
+@media (min-width: $phone-landscape) {
+  .tabs {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .tabs {
+    flex-direction: row;
+    margin-bottom: 133px;
+
+    a{
+      margin-right: 60px;
+      margin-bottom: 0;
+    }
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .tabs {
+
+  }
+}
+@media (min-width: $desktop) {
+  .tabs {
+
+    a:hover{
+      color: $tabs-active-color;
+    }
+
+  }
+}

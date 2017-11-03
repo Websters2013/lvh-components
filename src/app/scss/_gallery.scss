@@ -9,12 +9,30 @@
     margin-bottom: 25px;
     color: $titles-color;
     text-transform: uppercase;
+    @include HiraginoSans-W6;
     font-size: 30px;
     line-height: 1;
   }
 
   &__swiper{
     margin-top: 24px;
+
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-content: stretch;
+
+      & > div{
+        display: none;
+
+        &:first-child{
+          display: block;
+        }
+
+      }
+
+    }
+
   }
 
   &__item{
@@ -101,6 +119,22 @@
 @media (min-width: $phone-landscape) {
   .gallery {
 
+    &__swiper{
+
+      &-wrapper{
+
+        & > div{
+
+          &:nth-child( 2 ){
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 }
 @media (min-width: $tablet-portrait) {
@@ -114,10 +148,42 @@
       letter-spacing: -1.3px;
     }
 
+    &__swiper{
+
+      &-wrapper{
+
+        & > div{
+
+          &:nth-child( 3 ){
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 }
 @media (min-width: $tablet-landscape) {
   .gallery {
+
+    &__swiper{
+
+      &-wrapper{
+
+        & > div{
+
+          &:nth-child( 4 ){
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
 
   }
 }
@@ -143,6 +209,22 @@
         .gallery__item-text{
           opacity: 1;
           visibility: visible;
+        }
+
+      }
+
+    }
+
+    &__swiper{
+
+      &-wrapper{
+
+        & > div{
+
+          &:nth-child( 5 ){
+            display: block;
+          }
+
         }
 
       }

@@ -10,7 +10,9 @@ import { ExperienceHeroModule } from './experience-hero/experience-hero.module';
 import { GalleryModule } from './gallery/gallery.module';
 import { TabsModule } from './tabs/tabs.module';
 import { FilterModule } from './filter/filter.module';
-
+import { PlaceInfoModule } from './place-info/place-info.module';
+import { ServicesModule } from './services/services.module';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   imports: [
@@ -22,7 +24,10 @@ import { FilterModule } from './filter/filter.module';
     MatDialogModule,
     TabsModule,
     PrimePopupModule,
-    FilterModule
+    FilterModule,
+    PlaceInfoModule,
+    ServicesModule,
+    AboutModule
   ],
   declarations: [
     UiComponent

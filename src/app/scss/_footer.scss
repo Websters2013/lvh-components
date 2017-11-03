@@ -179,6 +179,10 @@
 @media (min-width: $desktop) {
   .footer{
 
+    a:hover{
+      text-decoration: underline;
+    }
+
     &__about{
       padding: 137px calc( 50% - 543px ) 86px;
     }
@@ -188,6 +192,29 @@
 
     &__subscribe{
       padding: 134px calc( 50% - 543px ) 0;
+
+      form{
+
+        button{
+          transition: background-color .3s ease, color .3s ease;
+
+          &:hover{
+            background-color: #000;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+    }
+
+    &__copyright{
+
+      a:hover{
+        text-decoration: none;
+      }
+
     }
 
   }

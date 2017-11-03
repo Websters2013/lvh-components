@@ -10,10 +10,11 @@
     margin-bottom: 15px;
   }
 
-  h1{
+  h1, h2{
     margin-bottom: 25px;
     color: $titles-color;
     text-transform: uppercase;
+    @include HiraginoSans-W6;
     font-size: 30px;
     line-height: 1;
   }
@@ -30,7 +31,7 @@
     line-height: 35px;
     letter-spacing: 1.4px;
 
-    h1{
+    h1, h2{
       font-size: 44px;
       letter-spacing: 2.5px;
     }

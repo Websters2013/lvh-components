@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TabsComponent } from './tabs.component';
+import { PlaceInfoComponent } from './place-info.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    TabsComponent
+    PlaceInfoComponent
   ],
   exports: [
-    TabsComponent
+    PlaceInfoComponent
   ]
 })
-export class TabsModule { }
+export class PlaceInfoModule { }

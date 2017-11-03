@@ -45,11 +45,9 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  public openMenu($event): void {
+  public openMenu(): void {
 
-    $event.stopPropagation();
 
-    this.triggerMenu();
 
   }
 
